@@ -8,12 +8,11 @@ import kotlin.system.exitProcess
 private val apiService = ApiClient.getService()
 
 fun main(args: Array<String>){
-<<<<<<< HEAD
+
     val apiService = ApiClient.getService()
     apiService.searchMovie("Spiderman 3",
             "TMDB_API_KEY")
             .subscribe {
-=======
     searchMovie()
 }
 
@@ -54,7 +53,6 @@ fun searchMovie(){
             )
 
     showOptions()
->>>>>>> 6573032... Movie Search HTTP Request
 
 }
 fun getMovieDetails(title: String): Observable<MovieSearchResponse>{
